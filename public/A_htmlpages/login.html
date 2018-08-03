@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LoginPlatform</title>
+	<meta charset="utf-8">
+	<style>
+		#container{
+			text-align: center;
+			background: grey;
+			padding:100px;
+		}
+		form{
+			padding:60px;
+			display:inline-block;
+			background: white;
+			text-align: left;
+			border-radius: 5px;
+		}
+		input{
+			display: inline-block;
+			float:right;
+			border: white;
+			border-bottom:1px solid grey;
+		}
+		button{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<form action="/otp" method="post">
+			Name : <input type="text" name = "number"><br/><br/>
+			Password : &nbsp&nbsp<input type="text" name="otp"><br/><br/>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
