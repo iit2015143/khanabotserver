@@ -14,15 +14,17 @@ var feel_it = {
 		"downtime" : 22
 	},
 	"image":"feel_it.jpg",
-	"Offers":[],
+	"Offers" : [{ "name" : "", "image" : "feel_it_p.jpg" }],
+//	"Offers":[],
+
 	"number" : 7985404152,
 	"feature" : "Value For Money",
 	"name" : "Feel It",
-  	"rating":3.7,
+  	"rating":3.4,
   	"HotDeals":[
 	{
 		name:"Kadai_Chicken",
-		price:[300],
+		price:[299],
 		description:"Specificaly for IIITA. Take it soon. Tandoor Paratha After 6 PM To 11 PM",
 		image: "butter_chicken_1.jpg"
 	},
@@ -134,7 +136,7 @@ var feel_it = {
 
 		},
 
-		"Continental" : {
+		/*"Continental" : {
 
 			"Cheese_Pizza" : {
 				"price" : [100],
@@ -204,7 +206,7 @@ var feel_it = {
 				"image" : "pizza_chicken_1.jpg"
 			},
 
-		},
+		},*/
 
 		"Beverage" : {
 
@@ -1084,13 +1086,13 @@ var feel_it = {
 				"price" : [60,100],
 				"category" : ["Veg","Chinese"],
 				"image" : "chinese_1.jpg"
-			},
+			}/*,
 			
 			"Spring_Roll" : {
 				"price" : [100],
 				"category" : ["Veg","Chinese","Rolls"],
 				"image" : "chinese_1.jpg"
-			}
+			}*/
 			
 		},
 
@@ -1103,7 +1105,7 @@ var feel_it = {
 				"image" : "veg_noodles_1.jpg"
 			},
 			
-			"Veg_sIGWAN_Noodles" : {
+			"Veg_Sigwan_Noodles" : {
 				"price" : [50,80],
 				"category" : ["Veg","Chinese"],
 				"image" : "veg_noodles_1.jpg"
@@ -1268,7 +1270,7 @@ var feel_it = {
 				"image" : "roti_1.jpg"
 			},
 
-			"Tandoori_Roti" : {
+			/*"Tandoori_Roti" : {
 				"price" : [15],
 				"category" : ["Indian_Bread"],
 				"image" : "tandoori_roti_2.jpg"
@@ -1326,11 +1328,11 @@ var feel_it = {
 				"price" : [50],
 				"category" : ["Indian_Bread"],
 				"image" : "laccha_paratha_1.jpg"
-			}
+			}*/
 
 		},
 
-		"Kabab" : {
+		/*"Kabab" : {
 
 
 			"Veg_Seek_Kabab" : {
@@ -1369,7 +1371,7 @@ var feel_it = {
 				"image" : "kabab_2.jpg"
 			}
 			
-		},
+		},*/
 
 
 		"Mutton" : {
@@ -1480,7 +1482,7 @@ var feel_it = {
 			}
 		},
 
-		"Paneer_Starter" : {
+		/*"Paneer_Starter" : {
 
 
 			"Tandoor_Aloo_Tikka" : {
@@ -1530,7 +1532,7 @@ var feel_it = {
 				"category" : ["Starters","Veg"],
 				"image" : "paneer_tikka_1.jpg"
 			}
-		},
+		},*/
 
 		"Mashroom" : {
 
@@ -1833,7 +1835,7 @@ var feel_it = {
 	}
 }
 
-console.log(feel_it);
+//console.log(feel_it);
 
 MongoClient.connect(mongourl,function(err,db){
         if(err)

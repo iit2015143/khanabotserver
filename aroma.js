@@ -11,7 +11,7 @@ var aroma = {
 
 	"availability" : {
 		"uptime" : 11,
-		"downtime" : 9
+		"downtime" : 21
 	},
 
 	"number" :8726959595 ,

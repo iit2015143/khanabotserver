@@ -11,17 +11,17 @@ var foh = {
 
 	"image":"foh_1.jpg",
 
-	"Offers" : [/*{ "name" : "", "image" : "rock_on_poster_2.jpg" } , */{ "name" : "Free delivery", "image" : "spring_roll_1.jpg" }],
-
+//	"Offers" : [/*{ "name" : "", "image" : "rock_on_poster_2.jpg" } ,*/ { "name" : "Free delivery", "image" : "spring_roll_1.jpg" }],
+	"Offers":[],
 	"availability" : {
 		"uptime" : 11,
-		"downtime" : 5
+		"downtime" : 23
 	},
 
 	"number" : 8574418045,
 	"feature" : "Value For Money",
 	"name" : "Food Of Heaven",
-  	"rating":3.5,
+  	"rating":3.8,
   	"HotDeals":[
 	{
 		name:"Tandoor/Simple Paneer Paratha 2pc",
@@ -104,7 +104,7 @@ var foh = {
 			},
 
 			"Paneer_Bhurji" : {
-				"price" : [40],
+				"price" : [60],
 				"category" : ["Non-Veg","Egg"],
 				"image" : "paneer_bhurji_2.jpg",
 				"availability" : {
@@ -257,15 +257,15 @@ var foh = {
 				
 			},
 
-			"Coffee_with_Icecream" : {
-				"price" : [70],
-				"category" : ["Drinks"],
-				"image" : "cold_coffee_1.jpg",
-				"availability" : {
-					"uptime" : 11,
-					"downtime" : 23
-				}
-			},
+			// "Coffee_with_Icecream" : {
+			// 	"price" : [70],
+			// 	"category" : ["Drinks"],
+			// 	"image" : "cold_coffee_1.jpg",
+			// 	"availability" : {
+			// 		"uptime" : 11,
+			// 		"downtime" : 23
+			// 	}
+			// },
 
 			"Sweet_Lassi" : {
 				"price" : [40],
@@ -333,7 +333,7 @@ var foh = {
 				}
 			},
 
-			"Kesar_Badam_Shake" : {
+			/*"Kesar_Badam_Shake" : {
 				"price" : [90],
 				"category" : ["Drinks"],
 				"image" : "Drinks_1.jpg",
@@ -341,7 +341,8 @@ var foh = {
 					"uptime" : 11,
 					"downtime" : 23
 				}
-			},
+			},*/
+
 			"Strawberry_Shake" : {
 				"price" : [90],
 				"category" : ["Drinks"],
@@ -457,7 +458,7 @@ var foh = {
 			"Masala_Omelette_2Egg" : {
 				"price" : [30],
 				"category" : ["Non-Veg","Egg"],
-				"image" : "masala_omelette.jpg",
+				"image" : "masala_omelette_1.jpg",
 				"availability" : {
 					"uptime" : 23,
 					"downtime" : 5
@@ -467,7 +468,7 @@ var foh = {
 			"Bread_Omelette" : {
 				"price" : [35],
 				"category" : ["Non-Veg","Egg"],
-				"image" : "masala_omelette.jpg",
+				"image" : "masala_omelette_1.jpg",
 				"availability" : {
 					"uptime" : 23,
 					"downtime" : 5
@@ -508,27 +509,27 @@ var foh = {
 				"image" : "GES_veg_cheese_sandwich.jpg"
 			},
 
-			"Spinach_Corn_Sandwich" : {
+			/*"Spinach_Corn_Sandwich" : {
 				"price" : [70],
 				"category" : ["Sandwich","Veg"],
 				"image" : "GES_veg_cheese_sandwich.jpg"
-			},
+			},*/
 
 			"Chicken_Sandwich" : {
 				"price" : [85],
-				"category" : ["Sandwich","Non-veg"],
+				"category" : ["Sandwich","Non-Veg"],
 				"image" : "GES_grilled_cheese.jpg"
 			},
 
 			"Chicken_n_Cheese_Sandwich" : {
 				"price" : [95],
-				"category" : ["Sandwich","Non-veg"],
+				"category" : ["Sandwich","Non-Veg"],
 				"image" : "GES_grilled_cheese.jpg"
 			},
 
 			"Chicken_Tikka_Sandwich" : {
 				"price" : [85],
-				"category" : ["Sandwich","Non-veg"],
+				"category" : ["Sandwich","Non-Veg"],
 				"image" : "GES_veg_cheese_sandwich.jpg"
 			}
 
@@ -553,13 +554,13 @@ var foh = {
 
 			"Chicken_Burger" : {
 				"price" : [80],
-				"category" : ["Burger","Non-veg","Fastfood"],
+				"category" : ["Burger","Non-Veg","Fastfood"],
 				"image" : "chicken_burger_2.jpg"
 			},
 
 			"Chicken_Burger_with_Cheese" : {
 				"price" : [95],
-				"category" : ["Burger","Non-veg","Fastfood"],
+				"category" : ["Burger","Non-Veg","Fastfood"],
 				"image" : "chicken_burger_1.jpg"
 			}
 
@@ -654,19 +655,19 @@ var foh = {
 
 			"FOH_Special_Non_Veg_Pizza" : {
 				"price" : [90],
-				"category" : ["Pizza","Non-veg","Fastfood"],
+				"category" : ["Pizza","Non-Veg","Fastfood"],
 				"image" : "pizza_chicken_1.jpg"
 			},
 
 			"Hot_n_Spicy_Chicken" : {
 				"price" : [130],
-				"category" : ["Pizza","Non-veg","Fastfood"],
+				"category" : ["Pizza","Non-Veg","Fastfood"],
 				"image" : "pizza_chicken_1.jpg"
 			},
 
 			"Chicken_Tikka_N_Red_Chilli" : {
 				"price" : [135],
-				"category" : ["Pizza","Veg","Fastfood"],
+				"category" : ["Pizza","Non-Veg","Fastfood"],
 				"image" : "pizza_chicken_1.jpg"
 			},
 
@@ -678,7 +679,7 @@ var foh = {
 
 			"Hawaiin_Chicken_pineapple_n_Plain_Chicken" : {
 				"price" : [150],
-				"category" : ["Pizza","Veg","Fastfood"],
+				"category" : ["Pizza","Non-Veg","Fastfood"],
 				"image" : "pizza_4.jpg"
 			}
 
@@ -697,7 +698,7 @@ var foh = {
 				},
 			},
 
-			"Chhola_Bhatura" : {
+			/*"Chhola_Bhatura" : {
 				"price" : [60],
 				"category" : ["Starters","Veg"],
 				"image" : "Paneer_pakoda_1.jpg",
@@ -705,7 +706,7 @@ var foh = {
 					"uptime" : 11,
 					"downtime" : 23
 				},
-			},
+			},*/
 
 			"Cutlets_Veg_2pc" : {
 				"price" : [60],
@@ -725,17 +726,17 @@ var foh = {
 					"uptime" : 11,
 					"downtime" : 23
 				},
-			},
+			}
 
-			"Cheese_Totmato_Chilli_6pc" : {
+			/*"Cheese_Totmato_Chilli_6pc" : {
 				"price" : [60],
 				"category" : ["Starters","Veg"],
 				"image" : "Paneer_pakoda_1.jpg",
 				"availability" : {
 					"uptime" : 11,
 					"downtime" : 23
-				},
-			}
+				}
+			}*/
 
 		},
 
@@ -750,19 +751,19 @@ var foh = {
 
 			"Fried_Fish_with_Tartar_Sauce" : {
 				"price" : [150],
-				"category" : ["Fried","Fried","Non-veg"],
+				"category" : ["Fried","Fried","Non-Veg"],
 				"image" : "fish_fried_1.jpg"
 			},
 
 			"Fish_Finger_with_Tarter_Sauce_8pc" : {
 				"price" : [150],
-				"category" : ["Fried","Fried","Non-veg"],
+				"category" : ["Fried","Fried","Non-Veg"],
 				"image" : "fish_fried_1.jpg"
 			},
 
 			"Tali_Hui_Machli" : {
 				"price" : [150],
-				"category" : ["Fried","Fried","Non-veg"],
+				"category" : ["Fried","Fried","Non-Veg"],
 				"image" : "fish_fried_2.jpg"
 			}
 
@@ -773,85 +774,85 @@ var foh = {
 
 			"Chicken_Masala" : {
 				"price" : [160,280],
-				"category" : ["Non-veg","Chicken","North_Indian"],
+				"category" : ["Non-Veg","Chicken","North_Indian"],
 				"image" : "chicken_masala_1.jpg"
 			},
 
 			"Chicken_Curry" : {
 				"price" : [150,280],
-				"category" : ["Non-veg","Chicken","North_Indian"],
+				"category" : ["Non-Veg","Chicken","North_Indian"],
 				"image" : "chicken_curry_1.jpg"
 			},
 
 			"Butter_Chicken" : {
 				"price" : [180,290],
-				"category" : ["Non-veg","Chicken","North_Indian"],
+				"category" : ["Non-Veg","Chicken","North_Indian"],
 				"image" : "butter_chicken_1.jpg"
 			},
 
 			"Chicken_DO_Pyaza" : {
 				"price" : [175,280],
-				"category" : ["Non-veg","Chicken","North_Indian"],
+				"category" : ["Non-Veg","Chicken","North_Indian"],
 				"image" : "Chicken_DO_Pyaza_1.jpg"
 			},
 
 			"Kadai_Chicken" : {
 				"price" : [180,290],
-				"category" : ["Non-veg","Chicken","North_Indian"],
+				"category" : ["Non-Veg","Chicken","North_Indian"],
 				"image" : "butter_chicken_4.jpg"
 			},
 
 			"Chicken_Tikka_Masala" : {
 				"price" : [200,300],
-				"category" : ["Non-veg","Chicken","North_Indian"],
+				"category" : ["Non-Veg","Chicken","North_Indian"],
 				"image" : "chicken_masala_1.jpg"
 			},
 
 			"Murg_Kali_Mirch" : {
 				"price" : [200,300],
-				"category" : ["Non-veg","Chicken","North_Indian"],
+				"category" : ["Non-Veg","Chicken","North_Indian"],
 				"image" : "butter_chicken_2.jpg"
 			},
 
 			"Murg_Methi_Masala" : {
 				"price" : [190,290],
-				"category" : ["Non-veg","Chicken","North_Indian"],
+				"category" : ["Non-Veg","Chicken","North_Indian"],
 				"image" : "butter_chicken_2.jpg"
 			},
 
 			"Murg_Lazeez_Hundi" : {
 				"price" : [160,280],
-				"category" : ["Non-veg","Chicken","North_Indian"],
+				"category" : ["Non-Veg","Chicken","North_Indian"],
 				"image" : "butter_chicken_2.jpg"
 			},
 
 			"Murg_Khada_Masala" : {
 				"price" : [200,310],
-				"category" : ["Non-veg","Chicken","North_Indian"],
+				"category" : ["Non-Veg","Chicken","North_Indian"],
 				"image" : "butter_chicken_2.jpg"
 			},
 
 			"Chicken_Rugen_Josh" : {
 				"price" : [180,310],
-				"category" : ["Non-veg","Chicken","North_Indian"],
+				"category" : ["Non-Veg","Chicken","North_Indian"],
 				"image" : "chicken_masala_1.jpg"
 			},
 
 			"Fish_Curry_3pc" : {
 				"price" : [130],
-				"category" : ["Non-veg","Chicken"],
+				"category" : ["Non-Veg","Chicken"],
 				"image" : "fish_curry_1.jpg"
 			},
 
 			"Fish_Masala_3pc" : {
 				"price" : [130],
-				"category" : ["Non-veg","Chicken"],
+				"category" : ["Non-Veg","Chicken"],
 				"image" : "fish_curry_2.jpg"
 			},
 
 			"Egg_Curry_2pc" : {
 				"price" : [70],
-				"category" : ["Non-veg","Chicken"],
+				"category" : ["Non-Veg","Chicken"],
 				"image" : "chicken_masala_1.jpg"
 			}
 
@@ -888,7 +889,7 @@ var foh = {
 			"Kadai_Paneer" : {
 				"price" : [150],
 				"category" : ["Veg","North_Indian"],
-				"image" : "paneer_grakadai_paneer_2.jpg"
+				"image" : "kadai_paneer_2.jpg"
 			},
 
 			"Paneer_Butter_Masala" : {
@@ -1010,11 +1011,11 @@ var foh = {
 		"South_Indian" : {
 
 
-			"Idli_Sambhar" : {
+			/*"Idli_Sambhar" : {
 				"price" : [50],
 				"category" : ["Veg","South_Indian"],
 				"image" : "dosa_3.jpg"
-			},
+			},*/
 
 			"Paper_Dosa" : {
 				"price" : [50],
@@ -1083,7 +1084,7 @@ var foh = {
 				"image" : "veg_noodles_1.jpg"
 			},
 
-			"Veg_Momos" : {
+			/*"Veg_Momos" : {
 				"price" : [60],
 				"category" : ["Veg","Chinese"],
 				"image" : "momos_1.jpg"
@@ -1093,7 +1094,7 @@ var foh = {
 				"price" : [80],
 				"category" : ["Non-Veg","Chinese"],
 				"image" : "momos_2.jpg"
-			},
+			},*/
 
 			"Crispy_Babycorn" : {
 				"price" : [90],
@@ -1107,11 +1108,11 @@ var foh = {
 				"image" : "veg_noodles_1.jpg"
 			},
 
-			"Veg_Lolly_Pop" : {
+			/*"Veg_Lolly_Pop" : {
 				"price" : [120],
 				"category" : ["Veg","Chinese"],
 				"image" : "veg_noodles_1.jpg"
-			},
+			},*/
 
 			"Paneer_Chilly_Manchurian" : {
 				"price" : [120],
@@ -1204,7 +1205,7 @@ var foh = {
 			},
 
 			"Fish_Hot_Garlic_Souce" : {
-				"price" : [90],
+				"price" : [150],
 				"category" : ["Veg","Chinese"],
 				"image" : "fish_fried_1.jpg"
 			}
@@ -1356,61 +1357,97 @@ var foh = {
 			"Roasted_Murg" : {
 				"price" : [130,250],
 				"category" : ["Non-Veg","Chicken","Fried","North_Indian"],
-				"image" : "chicken_fried_1.jpg"
+				"image" : "chicken_fried_1.jpg",
+				"availability" : {
+					"uptime" : 11,
+					"downtime" : 23
+				}
 			},
 
 			"Murg_Tikka" : {
 				"price" : [150,240],
 				"category" : ["Non-Veg","Chicken","Fried","North_Indian"],
-				"image" : "chicken_fried_1.jpg"
+				"image" : "chicken_fried_1.jpg",
+				"availability" : {
+					"uptime" : 11,
+					"downtime" : 23
+				}
 			},
 
 			"Murg_Malai_Tikka" : {
 				"price" : [150,240],
 				"category" : ["Non-Veg","Chicken","Fried","North_Indian"],
-				"image" : "chicken_fried_1.jpg"
+				"image" : "chicken_fried_1.jpg",
+				"availability" : {
+					"uptime" : 11,
+					"downtime" : 23
+				}
 			},
 
 			"Murg_Afghani" : {
 				"price" : [160,250],
 				"category" : ["Non-Veg","Chicken","Fried","North_Indian"],
-				"image" : "chicken_fried_1.jpg"
+				"image" : "chicken_fried_1.jpg",
+				"availability" : {
+					"uptime" : 11,
+					"downtime" : 23
+				}
 			},
 
 			"Murg_Kali_Mirch_Tikka" : {
 				"price" : [160,250],
 				"category" : ["Non-Veg","Chicken","Fried","North_Indian"],
-				"image" : "chicken_fried_1.jpg"
+				"image" : "chicken_fried_1.jpg",
+				"availability" : {
+					"uptime" : 11,
+					"downtime" : 23
+				}
 			},
 
-			"Murg_Hara_Bhara_Kabab" : {
+			/*"Murg_Hara_Bhara_Kabab" : {
 				"price" : [160,250],
 				"category" : ["Non-Veg","Chicken","Fried","North_Indian"],
 				"image" : "chicken_fried_1.jpg"
-			},
+			},*/
 
 			"Paneer_Tikka" : {
 				"price" : [100,160],
 				"category" : ["Veg","Chicken","Fried","North_Indian"],
-				"image" : "paneer_tikka_1.jpg"
+				"image" : "paneer_tikka_1.jpg",
+				"availability" : {
+					"uptime" : 11,
+					"downtime" : 23
+				}
 			},
 
 			"Paneer_Tikka_Hariyali" : {
 				"price" : [120],
 				"category" : ["Veg","Chicken","Fried","North_Indian"],
-				"image" : "paneer_tikka_2.jpg"
+				"image" : "paneer_tikka_2.jpg",
+				"availability" : {
+					"uptime" : 11,
+					"downtime" : 23
+				}
 			},
 
 			"Fish_Tikka_6pc" : {
 				"price" : [140],
 				"category" : ["Non-Veg","Fish","Fried","North_Indian"],
-				"image" : "chicken_fried_1.jpg"
+				"image" : "chicken_fried_1.jpg",
+				"availability" : {
+					"uptime" : 11,
+					"downtime" : 23
+				}
 			},
 
 			"Fish_Ajwaini_Tikka_6pc" : {
 				"price" : [140],
 				"category" : ["Non-Veg","Fish","Fried","North_Indian"],
-				"image" : "chicken_fried_1.jpg"
+				"image" : "chicken_fried_1.jpg",
+				"availability" : {
+					"uptime" : 11,
+					"downtime" : 23
+				}
 			}
 		},
 
@@ -1430,7 +1467,7 @@ var foh = {
 			},
 
 			"Veg_Pulao" : {
-				"price" : [45,90],
+				"price" : [90],
 				"category" : ["Veg","Fried","Rice","North_Indian"],
 				"image" : "rice_pulav_1.jpg",
 				"availability" : {
@@ -1440,7 +1477,7 @@ var foh = {
 			},
 
 			"Veg_Fried_Rice" : {
-				"price" : [45,90],
+				"price" : [90],
 				"category" : ["Veg","Fried","Rice","North_Indian"],
 				"image" : "rice_1.jpg",
 				"availability" : {
@@ -1450,7 +1487,7 @@ var foh = {
 			},
 
 			"Non_Veg_Fried_Rice" : {
-				"price" : [60,120],
+				"price" : [120],
 				"category" : ["Non-Veg","Fried","Rice","North_Indian"],
 				"image" : "rice_1.jpg",
 				"availability" : {
@@ -1460,13 +1497,13 @@ var foh = {
 			},
 
 			"Mater_Pulao" : {
-				"price" : [45,90],
+				"price" : [90],
 				"category" : ["Veg","Fried","Rice","North_Indian"],
 				"image" : "rice_1.jpg"
 			},
 
 			"Paneer_Fried_Rice" : {
-				"price" : [50,100],
+				"price" : [100],
 				"category" : ["Veg","Fried","Rice","North_Indian"],
 				"image" : "rice_1.jpg",
 				"availability" : {
@@ -1476,7 +1513,7 @@ var foh = {
 			},
 
 			"Egg_Fried_Rice" : {
-				"price" : [50,100],
+				"price" : [100],
 				"category" : ["Non-Veg","Fried","Rice","North_Indian","Egg"],
 				"image" : "rice_1.jpg",
 				"availability" : {
@@ -1486,7 +1523,7 @@ var foh = {
 			},
 
 			"Chicken_Fried_Rice" : {
-				"price" : [60,120],
+				"price" : [120],
 				"category" : ["Non-Veg","Fried","Rice","North_Indian"],
 				"image" : "chicken_biryani_4.jpg",
 				"availability" : {
@@ -1496,7 +1533,7 @@ var foh = {
 			},
 
 			"Veg_Szchewan_Fried_Rice" : {
-				"price" : [50,100],
+				"price" : [100],
 				"category" : ["Veg","Fried","Rice","North_Indian"],
 				"image" : "rice_1.jpg",
 				"availability" : {
@@ -1506,7 +1543,7 @@ var foh = {
 			},
 
 			"Non_Veg_Szchewan_Fried_Rice" : {
-				"price" : [60,120],
+				"price" : [120],
 				"category" : ["Non-Veg","Fried","Rice","North_Indian"],
 				"image" : "rice_1.jpg",
 				"availability" : {
@@ -1525,7 +1562,7 @@ var foh = {
 				}
 			},
 
-			"Non_Veg_Biryani_4pc/2pc" : {
+			"Non_Veg_Biryani_2pc/4pc" : {
 				"price" : [80,160],
 				"category" : ["Non-Veg","Fried","Rice","North_Indian"],
 				"image" : "chicken_biryani_3.jpg",
@@ -1559,7 +1596,7 @@ var foh = {
 				}
 			},
 
-			"Butter_Roti" : {
+			"Butter_Tawa_Roti" : {
 				"price" : [10],
 				"category" : ["Indian_Bread"],
 				"image" : "roti_1.jpg",
@@ -1654,7 +1691,7 @@ var foh = {
 				"category" : ["Indian_Bread"],
 				"image" : "laccha_paratha_1.jpg",
 				"availability" : {
-					"uptime" : 18,
+					"uptime" : 11,
 					"downtime" : 23
 				}
 			},
@@ -1703,9 +1740,9 @@ var foh = {
 				"image" : "butter_naan_5.jpg"
 			}
 
-		},
+		}
 
-		"FOH_Special_Deals" : {
+/*		"FOH_Special_Deals" : {
 
 
 			"Aaloo_Paratha_2pc" : {
@@ -1747,7 +1784,7 @@ var foh = {
 				"category" : ["Indian_Bread","Special"],
 				"image" : "dum_biryani_1.jpg"
 			}
-		}
+		}*/
 
 	}
 }
@@ -1758,7 +1795,9 @@ MongoClient.connect(mongourl,function(err,db){
 	if(err)
 	throw err;
 	var dbo = db.db("khanabot");
-	dbo.collection('restaurants').update({number:foh.number},{$set:{menu:foh.menu}},function(err,mres){
+	dbo.collection('restaurants').update({number:foh.number},{$set:{name:foh.name,rating:foh.rating,
+	"Location":foh.Location,availability:foh.availability,HotDeals:foh.HotDeals,TopRated:foh.TopRated,
+	menu:foh.menu,image:foh.image,Offers:foh.Offers}},function(err,mres){
 	  if(err)
 	  throw err;
 	  console.log("Wrote Your fucking object");

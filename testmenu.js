@@ -115,4 +115,5 @@ availability:foh.availability,Offers:[],HotDeals:[],TopRated:[]}},function(err,m
       throw err;
       console.log("Wrote Your fucking object");
     });
+   db.close();
 });
