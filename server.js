@@ -1325,6 +1325,13 @@ app.get('/currenttime',function(req,res){
 	res.send({currenttime:date});
 });
 
+app.get('/getoffers',function(req,res){
+	var offers = [{name:"OFF20",minValue:100,maxDiscount:-1},{name:"CASH50",minValue:200,maxDiscount:-1},
+	{name:"CASH80",minValue:300,maxDiscount:"-1"},{name:"OFF15",minValue:0,maxDiscount:-1},
+	{name:"OFF50",minValue:200,maxDiscount:200}];
+	res.send(offers);
+})
+
 var server = app.listen(port,function(req,res){
   console.log("server started on "+ port);
 });
