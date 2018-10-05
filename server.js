@@ -11,7 +11,7 @@ var twolevelunion = require('./testunion');
 var rest = require('./sendhttprequest');
 var adminOneNum=7488663497;
 var adminTwoNum=9807666322;
-var port = 8000;
+var port = 80;
 var MongoClient = require('mongodb').MongoClient;
 var mongourl = "mongodb://localhost:27017/";
 var sess={};
@@ -189,10 +189,6 @@ function checkacceptancetoalert(order){
 	console.log("checking for inconsistency");
 	tonumber = parseInt(order.tonumber);
 	console.log(order.tonumber+"this is my tonumber");
-<<<<<<< HEAD
-
-=======
->>>>>>> 08afbc751aaa5c3beda1e81bf5e982a9947514de
 	MongoClient.connect(mongourl,function(err,db){
 	  if(err)
 	  throw err;
