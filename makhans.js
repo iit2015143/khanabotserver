@@ -25,19 +25,19 @@ var makkhans = {
 	"name" : "Makkhans",
   	"rating":3.5,
   	"HotDeals":[
-	{
+	//{
 		// name:"Chicken_Biryani",
 		// price:[180],
 		// description:"Specifically for IIITA. Take it soon. Tandoor Paratha After 6 PM To 11 PM",
 		// image: "chicken_biryani_3.jpg"
-	},
+	//},
 
-	{
+	//{
 		// name:"Butter_Chicken",
 		// price:[300],
 		// description:"Specifically for IIITA. Take it soon.Tandoor Paratha After 6 PM To 11 PM",
 		// image : "butter_chicken_4.jpg"
-	}
+	//}
 
   ],
 
@@ -1146,7 +1146,7 @@ MongoClient.connect(mongourl,function(err,db){
 	if(err)
 	throw err;
 	var dbo = db.db("khanabot");
-	dbo.collection('restaurants').update({number:makkhans.number},{$set:{name:makkhans.name,rating:makkhans.rating,orders:makkhans.orders,
+	dbo.collection('restaurants').update({number:makkhans.number},{$set:{name:makkhans.name,/*rating:makkhans.rating,orders:makkhans.orders,*/
 	"Location":makkhans.Location,availability:makkhans.availability,HotDeals:makkhans.HotDeals,TopRated:makkhans.TopRated,
 	menu:makkhans.menu,image:makkhans.image,Offers:makkhans.Offers}},function(err,mres){
 	  if(err)

@@ -189,7 +189,10 @@ function checkacceptancetoalert(order){
 	console.log("checking for inconsistency");
 	tonumber = parseInt(order.tonumber);
 	console.log(order.tonumber+"this is my tonumber");
+<<<<<<< HEAD
 
+=======
+>>>>>>> 08afbc751aaa5c3beda1e81bf5e982a9947514de
 	MongoClient.connect(mongourl,function(err,db){
 	  if(err)
 	  throw err;
@@ -1435,9 +1438,8 @@ app.get('/currenttime',function(req,res){
 app.get('/getoffers',function(req,res){
 	var number = parseInt(req.query.number);
 	if(number == "7488663497"){
-		var offers = [{name:"OFF20",minValue:100,maxDiscount:-1},{name:"CASH50",minValue:200,maxDiscount:-1},
-		{name:"CASH80",minValue:300,maxDiscount:"-1"},{name:"OFF15",minValue:0,maxDiscount:-1},
-		{name:"OFF50",minValue:200,maxDiscount:200}];
+		var offers = [{name:"OFF20",minValue:200,maxDiscount:-1},
+		{name:"OFF10",minValue:100,maxDiscount:-1}];
 		res.send(offers);
 	}
 	else{
