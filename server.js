@@ -188,6 +188,7 @@ function checkacceptancetodecline(tonumber,id){
 function checkacceptancetoalert(order){
 	console.log("checking for inconsistency");
 	tonumber = parseInt(order.tonumber);
+	console.log(order.tonumber+"this is my tonumber");
 	MongoClient.connect(mongourl,function(err,db){
 	  if(err)
 	  throw err;
@@ -394,7 +395,7 @@ app.post('/loginrest',function(req,res){
 });
 
 app.get('/appversion',function(req,res){
-	res.send({version:"2.0.0"});
+	res.send({version:"2.0.1"});
 });
 
 app.get('/checkstatus',function(req,res){
@@ -910,6 +911,40 @@ app.post('/requestorder',function(req,res){
 	}
 });
 
+app.post('/requestordernew',function(req,res){
+	sess = req.session;
+	console.log("something came");
+	if(sess && sess.loggedin){
+		console.log("something came in");
+		var order = req.body.order;
+		//console.log(order);
+
+		order = JSON.parse(order);
+		console.log(order.ordermode,order.time);
+
+		// while(order.length > 0){
+		// 	temporder=[];
+		// 	tempnumber = order[0].number;
+		// 	for(var j=0; j<order.length;j++){
+		// 		if(order[j].number == tempnumber){
+		// 			temporder.push(order[j]);
+		// 			order.splice(j,1);
+		// 			j--;
+		// 		}
+		// 	}
+		// 	//console.log(temporder);
+		// 	processrequest(mode,temporder,time,gLocation);
+		//
+		// }
+		processrequestnew(order);
+		res.send({"orders":"requested"});
+
+	}
+	else{
+		res.send({loggedin:false});
+	}
+});
+
 function processrequest(mode,order,time,gLocation){
 	MongoClient.connect(mongourl,function(err,db){
 		if(err)
@@ -986,6 +1021,76 @@ function processrequest(mode,order,time,gLocation){
 		db.close();
 	});
 }
+
+function processrequestnew(order){
+	MongoClient.connect(mongourl,function(err,db){
+		if(err)
+			throw err;
+		var dbo = db.db("khanabot");
+		order.fromnumber = parseInt(sess.number);
+		var date = new Date();
+		order.id = date.getTime()+""+(1000 + Math.floor(8999 * Math.random()));
+		//console.log(orders);
+
+		var summary = "";
+		for(var i =0; i<order.order.length;i++){
+			// var price = order[i].price[parseInt(order[i].index)] * parseInt(order[i].quantity)
+			// total+=price;
+			summary += order.order[i].name +" x " + order.order[i].quantity +" = "+order.order[i].price+", ";
+		}
+		if(order.mode=="book")
+		summary = summary + "\nBook" +" in time : " + order.time;
+		else {
+			summary = summary + "\nCOD" +" in time : " + order.time;
+		}
+		console.log(summary);
+		console.log(order.total);
+		order.summary = summary;
+
+		dbo.collection("restaurants").update({"number":parseInt(order.tonumber)},{
+				$push : {
+					"orders":order
+				}
+			},{
+				upsert:false
+			},
+			function(err,mres){
+				if(err)
+				throw err;
+				console.log("updated in restaurants");
+		});
+
+
+		//If want to save location of user
+		dbo.collection("users").update({"number":parseInt(sess.number)},{
+			$push : {
+				"orders":order
+			}
+		},{
+			upsert:false
+		},
+		function(err,mres){
+			if(err)
+			throw err;
+			console.log("updated in users");
+		});
+
+		extractinfofornotif("restaurants",parseInt(order.tonumber),"There is a new order kindly see the order");
+
+		console.log("timer started");
+
+		setTimeout(function(){
+			checkacceptancetoalert(order);
+		},orderalert);
+
+		setTimeout(function(){
+			checkacceptancetodecline(order.tonumber,order.id);
+		},ordertimeout);
+
+		db.close();
+	});
+}
+
 
 app.get('/changeorderstatuspradeep',function(req,res){
 	sess = req.session;
@@ -1326,11 +1431,16 @@ app.get('/currenttime',function(req,res){
 });
 
 app.get('/getoffers',function(req,res){
-	var offers = [{name:"OFF20",minValue:100,maxDiscount:-1},{name:"CASH50",minValue:200,maxDiscount:-1},
-	{name:"CASH80",minValue:300,maxDiscount:"-1"},{name:"OFF15",minValue:0,maxDiscount:-1},
-	{name:"OFF50",minValue:200,maxDiscount:200}];
-	res.send(offers);
-})
+	var number = parseInt(req.query.number);
+	if(number == "7488663497"){
+		var offers = [{name:"OFF20",minValue:200,maxDiscount:-1},
+		{name:"OFF10",minValue:0,maxDiscount:-1}];
+		res.send(offers);
+	}
+	else{
+		res.send([]);
+	}
+});
 
 var server = app.listen(port,function(req,res){
   console.log("server started on "+ port);
