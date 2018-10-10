@@ -14,36 +14,36 @@ var makkhans = {
 	"status":"on",
 	"admin":"on",
 
-	"Offers" : [/*{ "name" : "Free delivery", "image" : "spring_roll_1.jpg" }*/],
+	"Offers" : [{ "name" : "Free delivery", "image" : "khanabotnightposter.png" }],
 	"availability" : {
 		"uptime" : 18,
 		"downtime" : 8
 	},
-	"image":"makkhans_1.jpg",
+	"image":"khanabotnight.jpeg",
 	"number" : 7488663497,
 	"feature" : "Value For Money",
-	"name" : "Makkhans",
+	"name" : "Khanabot Nights",
   	"rating":4,
   	"HotDeals":[
-	//{
-		// name:"Chicken_Biryani",
-		// price:[180],
-		// description:"Specifically for IIITA. Take it soon. Tandoor Paratha After 6 PM To 11 PM",
-		// image: "chicken_biryani_3.jpg"
-	//},
+	{
+		name:"Cheese Ball",
+		price:[100],
+		description:"Specifically for IIITA. Take it soon. Tandoor Paratha After 6 PM To 11 PM",
+		image: "cheeseball.jpg"
+	},
 
-	//{
-		// name:"Butter_Chicken",
-		// price:[300],
-		// description:"Specifically for IIITA. Take it soon.Tandoor Paratha After 6 PM To 11 PM",
-		// image : "butter_chicken_4.jpg"
-	//}
+	{
+		name:"Chicken Popcorn",
+		price:[70],
+		description:"Specifically for IIITA. Take it soon.Tandoor Paratha After 6 PM To 11 PM",
+		image : "chickenpopcorn.jpg"
+	}
 
   ],
 
   "TopRated":[
 
-  	//{Category:"Veg_Main_Course",SubCategory:"Paneer_Chow-Chow",Ind:0}
+  	{Category:"Drinks",SubCategory:"Lemonade",Ind:0},{Category:"Veg_Starters",SubCategory:"Thandi_Kheer",Ind:0}
 
   ],
 
@@ -56,7 +56,7 @@ var makkhans = {
 			"Lemonade" : {
 				"price" : [25],
 				"category" : ["Veg","Drinks"],
-				"image" : "makkhans_1.jpg"
+				"image" : "lemonade.jpg"
 			},
 
 			"Coke" : {
@@ -112,7 +112,7 @@ var makkhans = {
 			"Thandi_Kheer" : {
 				"price" : [50],
 				"category" : ["Veg"],
-				"image" : "makkhans_1.jpg"
+				"image" : "kheer.jpg"
 			}
 
 		}
@@ -137,7 +137,7 @@ MongoClient.connect(mongourl,function(err,db){
 	var dbo = db.db("khanabot");
 	dbo.collection('restaurants').update({number:makkhans.number},{$set:{name:makkhans.name,rating:makkhans.rating,orders:makkhans.orders,
 	"Location":makkhans.Location,availability:makkhans.availability,HotDeals:makkhans.HotDeals,TopRated:makkhans.TopRated,
-	menu:makkhans.menu,image:makkhans.image,Offers:makkhans.Offers}},function(err,mres){
+	menu:makkhans.menu,image:makkhans.image,Offers:makkhans.Offers,admin:makkhans.admin,status:makkhans.status}},function(err,mres){
 	  if(err)
 	  throw err;
 	  console.log("Wrote Your fucking object");
