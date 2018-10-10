@@ -11,13 +11,13 @@ var makkhans = {
 
 	"orders":[],
 
-	"status":"on",
+	"status":"off",
 	"admin":"on",
 
 	"Offers" : [{ "name" : "Free delivery", "image" : "khanabotnightposter.png" }],
 	"availability" : {
-		"uptime" : 18,
-		"downtime" : 8
+		"uptime" : 20,
+		"downtime" : 4
 	},
 	"image":"khanabotnight.jpeg",
 	"number" : 7488663497,
@@ -26,76 +26,135 @@ var makkhans = {
   	"rating":4,
   	"HotDeals":[
 	{
-		name:"Cheese Ball",
-		price:[100],
+		name:"Sandwich",
+		price:[30],
 		description:"Specifically for IIITA. Take it soon. Tandoor Paratha After 6 PM To 11 PM",
-		image: "cheeseball.jpg"
+		image: "veg_sandwich_1.jpg"
 	},
 
 	{
-		name:"Chicken Popcorn",
-		price:[70],
+		name:"Burger",
+		price:[50],
 		description:"Specifically for IIITA. Take it soon.Tandoor Paratha After 6 PM To 11 PM",
-		image : "chickenpopcorn.jpg"
+		image : "veg_burger_1.jpg"
+	},
+	{
+		name:"Aaloo_Paratha_2pc",
+		price:[40],
+		description:"Specifically for IIITA. Take it soon.Tandoor Paratha After 6 PM To 11 PM",
+		image : "aalu_paratha_1.jpg"
 	}
-
   ],
 
   "TopRated":[
-
-  	{Category:"Drinks",SubCategory:"Lemonade",Ind:0},{Category:"Veg_Starters",SubCategory:"Thandi_Kheer",Ind:0}
-
+  	{Category:"In_Demand",SubCategory:"Paneer_Bhurji_+_4_Paratha",Ind:0},
+		{Category:"Paratha",SubCategory:"Paneer_Paratha_2pc",Ind:0},
+		{Category:"Rolls",SubCategory:"Paneer_Roll",Ind:0}
   ],
 
 	"menu" : {
 
+		"In_Demand" : {
 
-		"Drinks" : {
 
-
-			"Lemonade" : {
-				"price" : [25],
-				"category" : ["Veg","Drinks"],
+			"Sandwich" : {
+				"price" : [30],
+				"category" : ["Veg"],
 				"image" : "lemonade.jpg"
 			},
 
-			"Coke" : {
-				"price" : [25],
-				"category" : ["Veg","Drinks"],
+			"Burger" : {
+				"price" : [50],
+				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
 			},
+			"Paneer_Bhurji" : {
+				"price" : [60],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
+			"Paneer_Bhurji_+_4_Paratha" : {
+				"price" : [80],
+				"category" : ["Veg"],
+				"image" : "paneer_bhurji_1.jpg"
+			}
 		},
 
-		"Non_Veg_Starters" : {
+		"Rolls" : {
 
 
-			"Chicken_Popcorn" : {
-				"price" : [70],
-				"category" : ["Non-Veg"],
-				"image" : "makkhans_1.jpg"
+			"Veg_Roll" : {
+				"price" : [40],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
 			},
 
-			"Crispy_Chicken" : {
-				"price" : [80],
-				"category" : ["Non-Veg"],
-				"image" : "makkhans_1.jpg"
-			},
-
-			"Chicken_Chilli" : {
+			"Paneer_Roll" : {
 				"price" : [60],
-				"category" : ["Non-Veg"],
+				"category" : ["Veg"],
+				"image" : "spring_roll_1.jpg"
+			}
+		},
+
+		"Paratha" : {
+
+
+			"Aaloo_Paratha_2pc" : {
+				"price" : [40],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+
+			"Paneer_Paratha_2pc" : {
+				"price" : [60],
+				"category" : ["Veg"],
+				"image" : "paneer_paratha_1.jpg"
+			},
+
+			"Gobhi_Paratha_2pc" : {
+				"price" : [40],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Mooli_Paratha_2pc" : {
+				"price" : [50],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Pyaz_Paratha_2pc" : {
+				"price" : [40],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Plane_Paratha_2pc" : {
+				"price" : [15],
+				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
 			}
     },
 
-		"Veg_Starters" : {
+		"Maggi" : {
 
+			"Maggi_Plane" : {
+				"price" : [25],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
 
-			"Cheese_Ball" : {
-				"price" : [100],
+			"Maggi_Masala" : {
+				"price" : [30],
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
 			},
+			"Paneer_Maggi_Masala" : {
+				"price" : [40],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			}
+		},
+
+		"Chinese" : {
+
 
 			"Chilli_Potato" : {
 				"price" : [60],
@@ -103,19 +162,104 @@ var makkhans = {
 				"image" : "makkhans_1.jpg"
 			},
 
-			"Golden_Baby_Corn" : {
+			"Chilli_Paneer" : {
+				"price" : [100],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+
+			"Golden_Fry_Babycorn" : {
 				"price" : [60],
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
 			},
 
-			"Thandi_Kheer" : {
+			"Crispy_Babycorn" : {
+				"price" : [60],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Chilli_Babycorn" : {
+				"price" : [60],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Gravy_Manchurian" : {
 				"price" : [50],
 				"category" : ["Veg"],
-				"image" : "kheer.jpg"
+				"image" : "makkhans_1.jpg"
+			},
+			"Dry_Manchurian" : {
+				"price" : [50],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Chowmin" : {
+				"price" : [40],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Veg_Sizwan_Chowmin" : {
+				"price" : [50],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Microni" : {
+				"price" : [50],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Pasta" : {
+				"price" : [60],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Veg_Fried_Rice" : {
+				"price" : [50],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Veg_Sizwan_Fried_Rice" : {
+				"price" : [60],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Veg_Singapuri_Fried_Rice" : {
+				"price" : [65],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Veg_Hongkong_Fried_Rice" : {
+				"price" : [65],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
 			}
 
-		}
+		},
+
+
+		"Biryani" : {
+
+
+			"Veg_Pulao_+_Matar_Gravy" : {
+				"price" : [70],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
+
+			"Hyderabadi_Biryani" : {
+				"price" : [100],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+
+			"Veg_Biryani" : {
+				"price" : [80],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			}
+		},
+
 	}
 }
 /*
