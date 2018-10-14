@@ -14,13 +14,13 @@ var makkhans = {
 	"status":"on",
 	"admin":"on",
 
-	"Offers" : [{ "name" : "Free delivery", "image" : "khanabotnightposter.png" }],
+	"Offers" : [{ "name" : "", "image" : "khanabotnightposter.png" }],
 	"availability" : {
-		"uptime" : 20,
+		"uptime" :20 ,
 		"downtime" : 4
 	},
-	"image":"khanabotnight.jpeg",
-	"number" : 9956837774,
+	"image":"khanabotnight.jpg",
+	"number" :9956837774 ,
 	"feature" : "Value For Money",
 	"name" : "Khanabot Nights",
   	"rating":4,

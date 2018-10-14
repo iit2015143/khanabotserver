@@ -1433,9 +1433,10 @@ app.get('/currenttime',function(req,res){
 
 app.get('/getoffers',function(req,res){
 	var number = parseInt(req.query.number);
-	if(number == "7488663497"){
-		var offers = [{name:"OFF20",minValue:200,maxDiscount:-1},
-		{name:"OFF10",minValue:100,maxDiscount:-1}];
+	if(number == "9956837774"){
+		var offers = [{name:"OFF15",minValue:150,maxDiscount:-1}/*,
+		{name:"OFF10",minValue:100,maxDiscount:-1}*/];
+		//offers=[];
 		res.send(offers);
 	}
 	else{
