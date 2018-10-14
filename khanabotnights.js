@@ -11,16 +11,16 @@ var makkhans = {
 
 	"orders":[],
 
-	"status":"off",
+	"status":"on",
 	"admin":"on",
 
-	"Offers" : [{ "name" : "Free delivery", "image" : "khanabotnightposter.png" }],
+	"Offers" : [{ "name" : "", "image" : "khanabotnightposter.png" }],
 	"availability" : {
-		"uptime" : 20,
+		"uptime" :20 ,
 		"downtime" : 4
 	},
-	"image":"khanabotnight.jpeg",
-	"number" : 7488663497,
+	"image":"khanabotnight.jpg",
+	"number" :9956837774 ,
 	"feature" : "Value For Money",
 	"name" : "Khanabot Nights",
   	"rating":4,
@@ -279,7 +279,7 @@ MongoClient.connect(mongourl,function(err,db){
 	if(err)
 	throw err;
 	var dbo = db.db("khanabot");
-	dbo.collection('restaurants').update({number:makkhans.number},{$set:{name:makkhans.name,rating:makkhans.rating,orders:makkhans.orders,
+	dbo.collection('restaurants').update({number:makkhans.number},{$set:{name:makkhans.name,rating:makkhans.rating,
 	"Location":makkhans.Location,availability:makkhans.availability,HotDeals:makkhans.HotDeals,TopRated:makkhans.TopRated,
 	menu:makkhans.menu,image:makkhans.image,Offers:makkhans.Offers,admin:makkhans.admin,status:makkhans.status}},function(err,mres){
 	  if(err)
