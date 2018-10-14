@@ -11,7 +11,7 @@ var makkhans = {
 
 	"orders":[],
 
-	"status":"off",
+	"status":"on",
 	"admin":"on",
 
 	"Offers" : [{ "name" : "Free delivery", "image" : "khanabotnightposter.png" }],
@@ -20,7 +20,7 @@ var makkhans = {
 		"downtime" : 4
 	},
 	"image":"khanabotnight.jpeg",
-	"number" : 7488663497,
+	"number" : 9956837774,
 	"feature" : "Value For Money",
 	"name" : "Khanabot Nights",
   	"rating":4,
@@ -75,6 +75,16 @@ var makkhans = {
 			},
 			"Paneer_Bhurji_+_4_Paratha" : {
 				"price" : [80],
+				"category" : ["Veg"],
+				"image" : "paneer_bhurji_1.jpg"
+			},
+			"Mix_Veg_+_4_Paratha" : {
+				"price" : [70],
+				"category" : ["Veg"],
+				"image" : "paneer_bhurji_1.jpg"
+			},
+			"Veg_Keema_+_4_Paratha" : {
+				"price" : [70],
 				"category" : ["Veg"],
 				"image" : "paneer_bhurji_1.jpg"
 			}
@@ -213,7 +223,11 @@ var makkhans = {
 				"price" : [60],
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
-			},
+			}
+		},
+
+		"Rice" : {
+
 			"Veg_Fried_Rice" : {
 				"price" : [50],
 				"category" : ["Veg"],
@@ -234,7 +248,25 @@ var makkhans = {
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
 			}
+		},
 
+		"Rice" : {
+
+			"Roti" : {
+				"price" : [5],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Sada Paratha" : {
+				"price" : [6],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Butter Roti" : {
+				"price" : [8],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			}
 		},
 
 
@@ -279,9 +311,10 @@ MongoClient.connect(mongourl,function(err,db){
 	if(err)
 	throw err;
 	var dbo = db.db("khanabot");
-	dbo.collection('restaurants').update({number:makkhans.number},{$set:{name:makkhans.name,rating:makkhans.rating,orders:makkhans.orders,
+	dbo.collection('restaurants').update({number:makkhans.number},{$set:{name:makkhans.name,rating:makkhans.rating,
 	"Location":makkhans.Location,availability:makkhans.availability,HotDeals:makkhans.HotDeals,TopRated:makkhans.TopRated,
-	menu:makkhans.menu,image:makkhans.image,Offers:makkhans.Offers,admin:makkhans.admin,status:makkhans.status}},function(err,mres){
+	menu:makkhans.menu,image:makkhans.image,Offers:makkhans.Offers,admin:makkhans.admin,status:makkhans.status}},
+	function(err,mres){
 	  if(err)
 	  throw err;
 	  console.log("Wrote Your fucking object");
