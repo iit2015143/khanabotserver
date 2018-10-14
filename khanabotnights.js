@@ -250,7 +250,7 @@ var makkhans = {
 			}
 		},
 
-		"Rice" : {
+		"Roti" : {
 
 			"Roti" : {
 				"price" : [5],
