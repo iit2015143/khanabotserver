@@ -301,7 +301,7 @@ function updateuuidrest(req,res,number,collection){
 					else {
 						console.log("uuid found and sent, multiple loggdin tracked\n" + mres.uuid);
 						sess.number = number;
-						sess.uuid = uuid;
+						sess.uuid = mres.uuid;
 						sess.loggedin = true;
 						res.send({uuid:mres.uuid});
 					}
@@ -427,6 +427,7 @@ app.post('/number',function(req,res){
 						if(err)
 						throw err;
 						sess.number = insertme.number;
+						console.log(sess.number);
 						res.send({otp:"sent"});
 						console.log("otp sent at "+ insertme.date);
 						//console.log(mres);
@@ -472,6 +473,7 @@ app.post('/otp',function(req,res){
 app.post('/otprest',function(req,res){
 		checkme={};
 		sess = req.session;
+		console.log(sess.number);
 		checkme.number = parseInt(sess.number);
 		checkme.otp = req.body.otp;
 		date = new Date();
