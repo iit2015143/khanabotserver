@@ -214,7 +214,7 @@ var makkhans = {
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
 			},
-			"Microni" : {
+			"Macroni" : {
 				"price" : [50],
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
