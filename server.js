@@ -1438,7 +1438,7 @@ app.get('/getoffers',function(req,res){
 	if(number == "9956837774"){
 		var offers = [{name:"OFF15",minValue:150,maxDiscount:-1}/*,
 		{name:"OFF10",minValue:100,maxDiscount:-1}*/];
-		//offers=[];
+		offers=[];
 		res.send(offers);
 	}
 	else{
