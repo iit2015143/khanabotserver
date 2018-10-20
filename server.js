@@ -141,7 +141,7 @@ function checkandwrite(id,status,fromnumber,tonumber,res){
 		    .findOne({"number": tonumber},
 		             {projection: { orders: { $elemMatch: { "id" : id} } } },
 		             function(errT, resultT) {
-			              console.log(resultT);
+			              //console.log(resultT);
 		        		if(resultT.orders[0].status == "Pending"){
 									res.send({status:"changed"});
 									writeorderstatus(id,status,fromnumber,tonumber);
@@ -168,7 +168,7 @@ function checkacceptancetodecline(tonumber,id){
 		    .findOne({"number": tonumber},
 		             {projection: { orders: { $elemMatch: { "id" : id} } } },
 		             function(errT, resultT) {
-			              console.log(resultT);
+			              //console.log(resultT);
 		        		if(resultT.orders[0].status == "Pending"){
 									writeorderstatus(resultT.orders[0].id,"Declined",
 										parseInt(resultT.orders[0].fromnumber),parseInt(resultT.orders[0].tonumber));
@@ -198,7 +198,7 @@ function checkacceptancetoalert(order){
 		    .findOne({"number": tonumber},
 		             {projection: { orders: { $elemMatch: { "id" : order.id} },msgnumber:1  } },
 		             function(errT, resultT) {
-			              console.log(resultT);
+			              //console.log(resultT);
 
 		        		if(resultT.orders[0].status == "Pending"){
 									if(resultT.msgnumber){
@@ -427,7 +427,7 @@ app.post('/number',function(req,res){
 						if(err)
 						throw err;
 						sess.number = insertme.number;
-						console.log(sess.number);
+						//console.log(sess.number);
 						res.send({otp:"sent"});
 						console.log("otp sent at "+ insertme.date);
 						//console.log(mres);
@@ -473,7 +473,7 @@ app.post('/otp',function(req,res){
 app.post('/otprest',function(req,res){
 		checkme={};
 		sess = req.session;
-		console.log(sess.number);
+		//console.log(sess.number);
 		checkme.number = parseInt(sess.number);
 		checkme.otp = req.body.otp;
 		date = new Date();
@@ -648,7 +648,7 @@ app.post('/sharelocation',function(req,res){
 				"Location.long":{$gt:long-config.dlongitude,$lt:long+config.dlongitude},"status":"on","admin":"on"}).
 				project({orders:0, _id:0,notificationid:0,uuid:0}).sort({rating:-1}).toArray(function(err,mres){
 					res.send(mres);
-					console.log(mres);
+					//console.log(mres);
 					console.log(lat,long);
       	});
 
@@ -698,7 +698,7 @@ app.get('/adminlistallrest',function(req,res){
 			dbo.collection("restaurants").find({}).
 				project({number:1,name:1}).toArray(function(err,mres){
 					res.send(mres);
-					console.log(mres);
+					//console.log(mres);
       	});
 
 			db.close();
@@ -1192,7 +1192,7 @@ app.get('/changeorderstatuscustomer',function(req,res){
 		    	.findOne({"number": tonumber},
 			             {projection: { orders: { $elemMatch: { "id" : id} } } },
 			             function(errT, resultT) {
-				              console.log(resultT);
+				              //console.log(resultT);
 			        		if(resultT.orders[0].status == "Pending"){
 										writeorderstatus(id,status,fromnumber,tonumber);
 										updatedatabasefordeclined(id,"customer",fromnumber,tonumber);
@@ -1368,7 +1368,7 @@ app.get('/setstatus',function(req,res){
 				if(err)
 				throw err;
 				res.send({status:status});
-				console.log(mres);
+				//console.log(mres);
 			});
 
 			db.close();
