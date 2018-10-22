@@ -22,9 +22,10 @@ var makkhans = {
 	"image":"strawberry.jpg",
 	"number" :7988576314 ,
 	"feature" : "Value For Money",
-	"name" : "Khanabot Groceries",
-  	"rating":3.8,
-  	"HotDeals":[
+	"name" : "Khanabot Pastries",
+  "rating":3.8,
+	"deliversin":20,
+	"HotDeals":[
 	{
 		name:"Pineapple Cake",
 		price:[349],
@@ -41,12 +42,12 @@ var makkhans = {
   ],
 
   "TopRated":[
-  	{Category:"Bakers_Table_Cakes",SubCategory:"Chocolate_Truffle",Ind:0},
-		{Category:"Bakers_Table_Cakes",SubCategory:"Chocolate_Mousse",Ind:0}  ],
+  	{Category:"Bakers_Table_Cakes_one_pound",SubCategory:"Chocolate_Truffle",Ind:0},
+		{Category:"Bakers_Table_Cakes_one_pound",SubCategory:"Chocolate_Mousse",Ind:0}  ],
 
 	"menu" : {
 
-		"Bakers_Table_Cakes": {
+		"Bakers_Table_Cakes_one_pound": {
 
 
 			"Pineapple" : {
@@ -114,80 +115,86 @@ var makkhans = {
 				"price" : [419],
 				"category" : ["Veg"],
 				"image" : "paneer_bhurji_1.jpg"
+			}
+		},
+
+		"Bakers_Table_Tea_Cakes_half_pound" : {
+
+			"Orange_Cake" : {
+				"price" : [250],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
 			},
-			"Paan_Cake(special order)" : {
+      "Banana_Cake" : {
+				"price" : [250],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
+      "Wheat_Cake" : {
+				"price" : [250],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
+      "Dates&Walnut_Cake" : {
+				"price" : [250],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
+      "Christmas_Cake" : {
+				"price" : [300],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
+      "Pound_Cake" : {
+				"price" : [300],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			}
+		},
+
+		"Bakers_Table_Tea_Cakes_one_and_half_pound" : {
+
+      "Orange_Cake" : {
+				"price" : [600],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
+      "Banana_Cake" : {
+				"price" : [600],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
+      "Wheat_Cake" : {
+				"price" : [600],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
+      "Dates&Walnut_Cake" : {
+				"price" : [600],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
+      "Christmas_Cake" : {
+				"price" : [650],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
+      "Pound_Cake" : {
+				"price" : [650],
+				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			}
+		},
+		"Bakers_Table_Special_Orders":{
+			"Paan_Cake" : {
 				"price" : [540],
 				"category" : ["Veg"],
 				"image" : "paneer_bhurji_1.jpg"
 			},
-			"Rasmalai_Cake(special order)" : {
+			"Rasmalai_Cake" : {
 				"price" : [600],
 				"category" : ["Veg"],
 				"image" : "paneer_bhurji_1.jpg"
-			}
-		},
-
-		"Bakers_Table_Tea_Cakes" : {
-
-			"Orange_Cake_1/2_pound" : {
-				"price" : [250],
-				"category" : ["Veg"],
-				"image" : "lemonade.jpg"
-			},
-      "Orange_Cake_1_1/2_pound" : {
-				"price" : [600],
-				"category" : ["Veg"],
-				"image" : "lemonade.jpg"
-			},
-      "Banana_Cake_1/2_pound" : {
-				"price" : [250],
-				"category" : ["Veg"],
-				"image" : "lemonade.jpg"
-			},
-      "Banana_Cake_1_1/2_pound" : {
-				"price" : [600],
-				"category" : ["Veg"],
-				"image" : "lemonade.jpg"
-			},
-      "Wheat_Cake_1/2_pound" : {
-				"price" : [250],
-				"category" : ["Veg"],
-				"image" : "lemonade.jpg"
-			},
-      "Wheat_Cake_1_1/2_pound" : {
-				"price" : [600],
-				"category" : ["Veg"],
-				"image" : "lemonade.jpg"
-			},
-      "Dates&Walnut_Cake_1/2_pound" : {
-				"price" : [250],
-				"category" : ["Veg"],
-				"image" : "lemonade.jpg"
-			},
-      "Dates&Walnut_Cake_1_1/2_pound" : {
-				"price" : [600],
-				"category" : ["Veg"],
-				"image" : "lemonade.jpg"
-			},
-      "Christmas_Cake_1/2_pound" : {
-				"price" : [300],
-				"category" : ["Veg"],
-				"image" : "lemonade.jpg"
-			},
-      "Christmas_Cake_1_1/2_pound" : {
-				"price" : [650],
-				"category" : ["Veg"],
-				"image" : "lemonade.jpg"
-			},
-      "Pound_Cake_1/2_pound" : {
-				"price" : [300],
-				"category" : ["Veg"],
-				"image" : "lemonade.jpg"
-			},
-      "Pound_Cake_1_1/2_pound" : {
-				"price" : [650],
-				"category" : ["Veg"],
-				"image" : "lemonade.jpg"
 			}
 		}
 	}
@@ -212,7 +219,8 @@ MongoClient.connect(mongourl,function(err,db){
 	dbo.collection('restaurants').update({number:makkhans.number},{$set:{name:makkhans.name,rating:makkhans.rating,orders:
     makkhans.orders,
 	"Location":makkhans.Location,availability:makkhans.availability,HotDeals:makkhans.HotDeals,TopRated:makkhans.TopRated,
-	menu:makkhans.menu,image:makkhans.image,Offers:makkhans.Offers,admin:makkhans.admin,status:makkhans.status}},
+	menu:makkhans.menu,image:makkhans.image,Offers:makkhans.Offers,admin:makkhans.admin,status:makkhans.status,deliversin:
+makkhans.deliversin}},
 	function(err,mres){
 	  if(err)
 	  throw err;
