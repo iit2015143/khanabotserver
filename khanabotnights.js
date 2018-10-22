@@ -13,6 +13,7 @@ var makkhans = {
 
 	"status":"on",
 	"admin":"on",
+	"deliversin":40,
 
 	"Offers" : [{ "name" : "", "image" : "khanabotnightposter.png" }],
 	"availability" : {
@@ -47,16 +48,15 @@ var makkhans = {
   ],
 
   "TopRated":[
-  	{Category:"In_Demand",SubCategory:"Paneer_Bhurji_+_4_Paratha",Ind:0},
+		{Category:"Recommended",SubCategory:"Egg_Bhurji_+_4_Paratha",Ind:0},
+  	{Category:"Recommended",SubCategory:"Paneer_Bhurji_+_4_Paratha",Ind:0},
 		{Category:"Paratha",SubCategory:"Paneer_Paratha_2pc",Ind:0},
 		{Category:"Rolls",SubCategory:"Paneer_Roll",Ind:0}
   ],
 
 	"menu" : {
 
-		"In_Demand" : {
-
-
+		"Recommended" : {
 			"Sandwich" : {
 				"price" : [30],
 				"category" : ["Veg"],
@@ -78,15 +78,57 @@ var makkhans = {
 				"category" : ["Veg"],
 				"image" : "paneer_bhurji_1.jpg"
 			},
+			"Egg_Bhurji_+_4_Paratha" : {
+				"price" : [70],
+				"category" : ["Non-Veg"],
+				"image" : "egg_bhurji_1.jpg"
+			},
 			"Mix_Veg_+_4_Paratha" : {
 				"price" : [70],
 				"category" : ["Veg"],
 				"image" : "paneer_bhurji_1.jpg"
-			},
-			"Veg_Keema_+_4_Paratha" : {
-				"price" : [70],
+			}
+			// ,
+			// "Veg_Keema_+_4_Paratha" : {
+			// 	"price" : [70],
+			// 	"category" : ["Veg"],
+			// 	"image" : "paneer_bhurji_1.jpg"
+			// }
+		},
+
+		"Sandwich":{
+			"Sandwich" : {
+				"price" : [30],
 				"category" : ["Veg"],
-				"image" : "paneer_bhurji_1.jpg"
+				"image" : "makkhans_1.jpg"
+			},
+			"Grilled_Sandwich" : {
+				"price" : [30],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Cheese_SandWich" : {
+				"price" : [40],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			}
+		},
+
+		"Burgers":{
+			"Burger" : {
+				"price" : [50],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Chicken_Burger" : {
+				"price" : [100],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Egg_Burger" : {
+				"price" : [70],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
 			}
 		},
 
@@ -102,6 +144,29 @@ var makkhans = {
 			"Paneer_Roll" : {
 				"price" : [60],
 				"category" : ["Veg"],
+				"image" : "spring_roll_1.jpg"
+			},
+// ,
+			// "Veg_Keema_+_4_Paratha" : {
+			// 	"price" : [70],
+			// 	"category" : ["Veg"],
+			// 	"image" : "paneer_bhurji_1.jpg"
+			// }
+			"Cheese_Roll" : {
+				"price" : [60],
+				"category" : ["Veg"],
+				"image" : "spring_roll_1.jpg"
+			},
+
+			"Egg_Roll" : {
+				"price" : [50],
+				"category" : ["Non-Veg"],
+				"image" : "spring_roll_1.jpg"
+			},
+
+			"Chicken_Roll" : {
+				"price" : [80],
+				"category" : ["Non-Veg"],
 				"image" : "spring_roll_1.jpg"
 			}
 		},
@@ -136,6 +201,11 @@ var makkhans = {
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
 			},
+			"Egg_Paratha_1pc" : {
+				"price" : [40],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
 			"Plane_Paratha_2pc" : {
 				"price" : [15],
 				"category" : ["Veg"],
@@ -160,11 +230,28 @@ var makkhans = {
 				"price" : [40],
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
+			},
+
+			"Cheese_Maggi" : {
+				"price" : [40],
+				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+
+			"Egg_Maggi" : {
+				"price" : [40],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+
+			"Chicken_Maggi" : {
+				"price" : [60],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
 			}
 		},
 
 		"Chinese" : {
-
 
 			"Chilli_Potato" : {
 				"price" : [60],
@@ -209,9 +296,24 @@ var makkhans = {
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
 			},
-			"Veg_Sizwan_Chowmin" : {
+			"Veg_Schezwan_Chowmin" : {
 				"price" : [50],
 				"category" : ["Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Egg_Chowmin" : {
+				"price" : [50],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Chicken_Chowmin" : {
+				"price" : [60],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Chicken_Schezwan_Chowmin" : {
+				"price" : [80],
+				"category" : ["Non-Veg"],
 				"image" : "makkhans_1.jpg"
 			},
 			"Macroni" : {
@@ -223,6 +325,33 @@ var makkhans = {
 				"price" : [60],
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
+			},
+			"Chicken_Chilli" : {
+				"price" : [80],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Crispy_Chicken" : {
+				"price" : [80],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Chicken_65" : {
+				"price" : [100],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+
+			"Chicken_Schezwan" : {
+				"price" : [80],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+
+			"Chicken_Hot_Garlic" : {
+				"price" : [80],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
 			}
 		},
 
@@ -233,7 +362,7 @@ var makkhans = {
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
 			},
-			"Veg_Sizwan_Fried_Rice" : {
+			"Veg_Schezwan_Fried_Rice" : {
 				"price" : [60],
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
@@ -247,6 +376,26 @@ var makkhans = {
 				"price" : [65],
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
+			},
+			"Chicken_Fried_Rice" : {
+				"price" : [70],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Chicken_Schezwan_Fried_Rice" : {
+				"price" : [80],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Chicken_Garlic_Rice" : {
+				"price" : [80],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Chicken_Schezwan_+_Triple_Rice" : {
+				"price" : [150],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
 			}
 		},
 
@@ -257,12 +406,12 @@ var makkhans = {
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
 			},
-			"Sada Paratha" : {
+			"Plane_Paratha" : {
 				"price" : [6],
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
 			},
-			"Butter Roti" : {
+			"Butter_Roti" : {
 				"price" : [8],
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
@@ -289,8 +438,29 @@ var makkhans = {
 				"price" : [80],
 				"category" : ["Veg"],
 				"image" : "makkhans_1.jpg"
+			},
+
+			"Chicken_Biryani" : {
+				"price" : [70,110],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+
+			"Hyderabadi_Chicken_Biryani" : {
+				"price" : [80,120],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
 			}
 		},
+
+		"Gravy" : {
+
+			"Chicken_Curry" : {
+				"price" : [120],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			}
+		}
 
 	}
 }
@@ -313,7 +483,8 @@ MongoClient.connect(mongourl,function(err,db){
 	var dbo = db.db("khanabot");
 	dbo.collection('restaurants').update({number:makkhans.number},{$set:{name:makkhans.name,rating:makkhans.rating,
 	"Location":makkhans.Location,availability:makkhans.availability,HotDeals:makkhans.HotDeals,TopRated:makkhans.TopRated,
-	menu:makkhans.menu,image:makkhans.image,Offers:makkhans.Offers,admin:makkhans.admin,status:makkhans.status}},
+	menu:makkhans.menu,image:makkhans.image,Offers:makkhans.Offers,admin:makkhans.admin,status:makkhans.status,deliversin:
+makkhans.deliversin}},
 	function(err,mres){
 	  if(err)
 	  throw err;
