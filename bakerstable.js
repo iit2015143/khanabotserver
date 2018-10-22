@@ -16,10 +16,10 @@ var makkhans = {
 
 	"Offers" : [{ "name" : "", "image" : "khanabotnightposter.png" }],
 	"availability" : {
-		"uptime" :20,
+		"uptime" :10,
 		"downtime" : 5
 	},
-	"image":"khanabotnight.jpg",
+	"image":"strawberry.jpg",
 	"number" :7988576314 ,
 	"feature" : "Value For Money",
 	"name" : "Khanabot Groceries",
