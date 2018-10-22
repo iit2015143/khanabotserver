@@ -57,6 +57,16 @@ var makkhans = {
 	"menu" : {
 
 		"Recommended" : {
+			"Chicken_Biryani" : {
+				"price" : [70,110],
+				"category" : ["Non-Veg"],
+				"image" : "makkhans_1.jpg"
+			},
+			"Egg_Bhurji_+_4_Paratha" : {
+				"price" : [70],
+				"category" : ["Non-Veg"],
+				"image" : "egg_bhurji_1.jpg"
+			},
 			"Sandwich" : {
 				"price" : [30],
 				"category" : ["Veg"],
@@ -71,6 +81,11 @@ var makkhans = {
 			"Paneer_Bhurji" : {
 				"price" : [60],
 				"category" : ["Veg"],
+				"image" : "lemonade.jpg"
+			},
+			"Egg_Bhurji" : {
+				"price" : [50],
+				"category" : ["Non-Veg"],
 				"image" : "lemonade.jpg"
 			},
 			"Paneer_Bhurji_+_4_Paratha" : {
