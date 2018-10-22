@@ -20,7 +20,7 @@ var makkhans = {
 		"uptime" :20 ,
 		"downtime" : 5
 	},
-	"image":"khanabotnight.jpg",
+	"image":"khanabotnightte.jpg",
 	"number" :9956837774 ,
 	"feature" : "Value For Money",
 	"name" : "Khanabot Nights",
