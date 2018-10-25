@@ -14,9 +14,9 @@ var makkhans = {
 	"status":"on",
 	"admin":"on",
 
-	"Offers" : [{ "name" : "", "image" : "khanabotnightposter.png" }],
+	"Offers" : [/*{ "name" : "", "image" : "khanabotnightposter.png" }*/],
 	"availability" : {
-		"uptime" :20,
+		"uptime" :14,
 		"downtime" : 5
 	},
 	"image":"strawberry.jpg",

@@ -136,7 +136,7 @@ var makkhans = {
 				"image" : "makkhans_1.jpg"
 			},
 			"Chicken_Burger" : {
-				"price" : [100],
+				"price" : [80],
 				"category" : ["Non-Veg"],
 				"image" : "makkhans_1.jpg"
 			},
