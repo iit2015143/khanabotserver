@@ -18,7 +18,7 @@ var foh = {
 		"downtime" : 23
 	},
 
-	"number" : 8574418045,
+	"number" : 8181910695,
 	"feature" : "Value For Money",
 	"name" : "Food Of Heaven",
   	"rating":3.8,
@@ -153,7 +153,7 @@ var foh = {
 					"downtime" : 5
 				}
 			},
-			
+
 			"Veg_Fried_Rice" : {
 				"price" : [45],
 				"category" : ["Veg","Fried","Rice","North_Indian"],
@@ -234,14 +234,14 @@ var foh = {
 				}
 			}
 
-			
-		},		
+
+		},
 
 		"Drinks" : {
 
 
 			"Coffee_Hot" : {
-				"price" : [30],
+				"price" : [20],
 				"category" : ["Drinks"],
 				"image" : "hot_coffee_2.jpg",
 				"availability" : {
@@ -254,7 +254,7 @@ var foh = {
 				"price" : [60],
 				"category" : ["Drinks"],
 				"image" : "cold_coffee_2.jpg",
-				
+
 			},
 
 			// "Coffee_with_Icecream" : {
@@ -484,7 +484,7 @@ var foh = {
 					"downtime" : 5
 				}
 			}
-				
+
 		},
 
 		"Sandwich" : {
@@ -1121,7 +1121,7 @@ var foh = {
 			},
 
 			"Veg_Manchurian" : {
-				"price" : [90],
+				"price" : [120],
 				"category" : ["Veg","Chinese"],
 				"image" : "man_1.jpg"
 			},
@@ -1801,5 +1801,6 @@ MongoClient.connect(mongourl,function(err,db){
 	  if(err)
 	  throw err;
 	  console.log("Wrote Your fucking object");
+		db.close();
 	});
 });
