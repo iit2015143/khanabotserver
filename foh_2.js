@@ -567,7 +567,7 @@ var foh = {
 
 		},
 
-		"Pizza" : {
+/*		"Pizza" : {
 
 			"Cheese_Pizza" : {
 				"price" : [90],
@@ -685,7 +685,7 @@ var foh = {
 
 		},
 
-		"Lite_Bites" : {
+*/		"Lite_Bites" : {
 
 
 			"Paneer_Pakoda" : {

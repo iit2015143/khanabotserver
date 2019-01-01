@@ -396,7 +396,7 @@ app.post('/loginrest',function(req,res){
 });
 
 app.get('/appversion',function(req,res){
-	res.send({version:"2.0.1"});
+	res.send({version:"2.1.0"});
 });
 
 app.get('/checkstatus',function(req,res){
@@ -621,7 +621,7 @@ app.get('/savenotificationidrest',function(req, res){
 
 app.post('/sharelocation',function(req,res){
 	sess = req.session;
-
+	console.log("in sharelocation");
 	if(sess && sess.loggedin){
 		var lat = parseFloat(req.body.lat);
 		var long = parseFloat(req.body.long);
@@ -1039,7 +1039,8 @@ function processrequestnew(order){
 		for(var i =0; i<order.order.length;i++){
 			// var price = order[i].price[parseInt(order[i].index)] * parseInt(order[i].quantity)
 			// total+=price;
-			summary += order.order[i].name +" x " + order.order[i].quantity +" = "+order.order[i].price+", ";
+			summary += order.order[i].name.split('_').join(' ') + " (" +order.order[i].price+")" +" x " + order.order[i].quantity +" = "+ 
+			order.order[i].price * order.order[i].quantity +", ";
 		}
 		if(order.mode=="book")
 		summary = summary + "\nBook" +" in time : " + order.time;
@@ -1220,7 +1221,7 @@ app.get('/orderhistory',function(req,res){
 	if(sess && sess.loggedin){
 		console.log("in order history");
 		MongoClient.connect(mongourl,function(err,db){
-			if(err)
+		if(err)
 				throw err;
 
 			var dbo = db.db("khanabot");
@@ -1305,7 +1306,7 @@ app.get('/orderhistoryrest',function(req,res){
 				throw err;
 				var dborders = mres.orders;
 				if(dborders){
-					for(var i=0; i<50; i++){
+					for(var i=0; i<180; i++){
 						//console.log(orders);
 						if(dborders.length - i -1 >=0)
 						orders.push(dborders[dborders.length -i - 1]);

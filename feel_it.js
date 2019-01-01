@@ -11,7 +11,7 @@ var feel_it = {
 
 	"availability" : {
 		"uptime" : 11,
-		"downtime" : 22
+		"downtime" : 21
 	},
 	"image":"feel_it.jpg",
 	"Offers" : [{ "name" : "", "image" : "feel_it_p.jpg" }],
