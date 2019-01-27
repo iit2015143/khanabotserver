@@ -523,19 +523,19 @@ var rock_on = {
 				"category" : ["Non-Veg","Chinese"],
 				"image" : "veg_noodles_1.jpg"
 			},
-			
+
 			"Chicken_65_(Gravy)" : {
 				"price" : [200],
 				"category" : ["Non-Veg","Chinese"],
 				"image" : "veg_noodles_1.jpg"
 			},
-			
+
 			"Crispy_Chicken_In_Hot_Garlic" : {
 				"price" : [180],
 				"category" : ["Non-Veg","Chinese"],
 				"image" : "veg_noodles_1.jpg"
 			},
-			
+
 			"Crispy_Chicken_In_Hot_Lemon" : {
 				"price" : [180],
 				"category" : ["Non-Veg","Chinese"],
@@ -1634,7 +1634,7 @@ var rock_on = {
 				"image" : "Drinks_1.jpg"
 			},
 
-			
+
 
 			"Cold_Coffee" : {
 				"price" : [55],
@@ -1997,19 +1997,6 @@ var rock_on = {
 	}
 }
 
-//console.log(rock_on);
-
-/*MongoClient.connect(mongourl,function(err,db){
-	if(err)
-	throw err;
-	var dbo = db.db("khanabot");
-	dbo.collection('restaurants').insert(foh,function(err,mres){
-	  if(err)
-	  throw err;
-	  console.log("Wrote Your fucking object");
-	});
-});
-*/
 MongoClient.connect(mongourl,function(err,db){
 	if(err)
 	throw err;
